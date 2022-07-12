@@ -5,6 +5,12 @@
   right: 0;
   padding: 2.7rem 0;
   z-index: 10;
+  opacity: 0;
+  transition: opacity 3s $common-fade-in;
+
+  .loaded & {
+    opacity: 1;
+  }
 
   @media (min-width: $stop-scaling) {
     padding: 27px 0;
@@ -35,6 +41,14 @@
   padding: 1rem 0;
   width: 10rem;
   color: $c-light;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: transform 1s $common-fade-in, opacity 1s $common-fade-in;
+
+  .loaded & {
+    opacity: 1;
+    transform: translateX(0);
+  }
 
   @media (min-width: $stop-scaling) {
     top: -5px;
@@ -251,7 +265,7 @@
       height: 2px;
       background-color: $c-light;
       left: 0;
-      transition: width 0.3s ease-in-out;
+      transition: width 1s $common-fade-in;
 
       @media (max-width: $tablet) and (orientation: portrait) {
         left: 0;
@@ -266,7 +280,7 @@
       }
     }
 
-    &.active,
+    .loaded &.active,
     &:hover {
       &::after {
         width: 100%;
