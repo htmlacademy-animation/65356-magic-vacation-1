@@ -21,8 +21,6 @@ export class LetterAnimation {
     return span;
   }
 
-  // для пулреквеста
-
   prepareText() {
     if (!this._element) {
       return;
