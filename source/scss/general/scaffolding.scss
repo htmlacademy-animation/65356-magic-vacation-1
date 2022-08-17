@@ -99,3 +99,18 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.text-word {
+  display: block;
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+.text-word > span {
+  transform: translate3d(0, 1.3em, 0);
+  display: inline-block;
+}
+
+.active > .text-word > span {
+  transform: translate3d(0, 0, 0);
+}
