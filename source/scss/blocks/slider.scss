@@ -216,6 +216,17 @@
     }
   }
 
+  .header-blue &,
+  .header-light & {
+    color: #3f72ee;
+
+    &:focus::before {
+      border-color: #3f72ee;
+    }
+  }
+
+
+
   &:active,
   &:active:focus {
     color: $c-light;
@@ -231,6 +242,38 @@
   &.swiper-button-disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  &:first-child {
+    opacity: 0;
+    animation: controlFadeInLeft 0.4s linear 0.5s forwards;
+  }
+
+  &:last-child {
+    opacity: 0;
+    animation: controlFadeInRight 0.4s linear 0.5s forwards;
+  }
+}
+
+@keyframes controlFadeInLeft {
+  from {
+    transform: translateX(-100px) rotate(-180deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes controlFadeInRight {
+  from {
+    transform: translateX(100px) rotate(180deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
   }
 }
 
