@@ -297,6 +297,22 @@
         background-color: $c-purple;
       }
     }
+
+    .header-blue &:hover {
+      color: #9fcfff;
+
+      &::after {
+        background-color: #9fcfff;
+      }
+    }
+
+    .header-light &:hover {
+      color: #3f72ee;
+
+      &::after {
+        background-color: #3f72ee;
+      }
+    }
   }
 }
 
