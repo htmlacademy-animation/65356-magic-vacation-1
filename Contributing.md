@@ -24,7 +24,7 @@ git push
 ¹ В `academy` должна быть ссылка на репозиторий Академии. Если его там нет, добавьте:
 
 ```
-git remote add academy git@github.com:htmlacademy-animation/65356-magic-vacation-1.git
+git remote add academy git@github.com:htmlacademy-animation/2386581-magic-vacation-1.git
 ```
 
 Когда вы обновили `master`, создайте ветку для нового задания:
