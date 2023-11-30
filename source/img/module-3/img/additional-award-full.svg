@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 350 330"
   style="background: #000;">
-  <animate id="additionalAwardAppear" attributeType="CSS" attributeName="opacity" from="0" to="1"
-    begin="primaryAwardAppear.end + 5s" dur=".3s" restart="whenNotActive" fill="freeze" />
+  <animate id="additionalAwardAppear" attributeType="CSS" attributeName="opacity" from="0" to="1" dur=".3s"
+    restart="whenNotActive" fill="freeze" />
   <animateTransform id="wrapperTranslate" attributeName="transform" type="translate" values="100 0; 0 0" keyTimes="0; 1"
-    dur="0.4s" fill="freeze" begin="additionalAwardAppear.begin"></animateTransform>
+    dur="0.4s" fill="freeze"></animateTransform>
   <g id="suitcase-before">
     <g id="suitcase-top">
       <path d="M225.88,258.06H82.68a11.62,11.62,0,0,0-11.57,11.61v19.75H237.44V269.66a11.62,11.62,0,0,0-11.56-11.61"
