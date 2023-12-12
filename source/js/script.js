@@ -11,6 +11,7 @@ import form from './modules/form.js';
 import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
 import activateTitleAnimation from './modules/activate-title-animation';
+import game from './modules/game.js';
 
 // init modules
 pageLoad();
@@ -20,6 +21,7 @@ slider();
 prizes();
 menu();
 footer();
+game();
 chat();
 result();
 form();
